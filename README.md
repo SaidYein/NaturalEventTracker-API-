@@ -11,7 +11,7 @@ API Project
 
 ### Demo
 
-<a href= "https://saidyein.github.io/NaturalEventTracker-API-"> Natural Event Tracker </a>
+<a href= "https://saidyein.github.io/NaturalEventTracker-API-/src/"> Natural Event Tracker </a>
 
 ### Features
 
