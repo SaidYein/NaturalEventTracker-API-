@@ -7,7 +7,7 @@ API Project
 <p><strong>Natural Event Tracker</strong> is powered by EONET (Earth Observatory Natural Event Tracker). EONET is a repository of metadata about natural events. .In this app, you will be able to track Wildfires, Severe Storms, Volcanic activities and Ice formations. You can select desired event name from the list on the Natural Events Page to monitor the event locations and information related.</p>
 
 <image src="./public/mainPage.png"></image>
-<image src="./public/mainPage.png"></image>
+<image src="./public/eventMap.png"></image>
 
 ### Demo
 
