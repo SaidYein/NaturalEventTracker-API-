@@ -44,7 +44,10 @@ const MainPage = () => {
           </p>
         </div>
         <button className="eventPageButton">
-          <Link to="/events"> Click Here to See Natural Events Map </Link>
+          <Link to="/NaturalEventTracker-API-/events">
+            {" "}
+            Click Here to See Natural Events Map{" "}
+          </Link>
         </button>
         <button
           className="footerButton"
