@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Land Inspector App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+API Project
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+<p><strong>Land Inspector</strong> app is created by Html CSS and JavaScript. In this app, we use API to get and render basic data about a country and its neighbors by entering a value to input field on the screen</p>
+<image src="./public/screenshot.png"></image>
 
-### `npm start`
+### Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>Do you know what are the bordering countries of Japan? What is the population of Russia? Which currency does Ghana use? <strong><a href="https://saidyein.github.io/CountryInfo/">LandInspector</a></strong> answers all these questions in a sec. Give it a try!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<a href= "https://saidyein.github.io/CountryInfo/"> Land Inspector App</a>
 
-### `npm test`
+### Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- This is a single page application
+- The app uses API to get data from <a href="<https://restcountries.com>/">https://restcountries.com</a>
+- A user can enter a country name in to the input field to display the data recieved
+- A user can trigger search by either pressing 'Enter' or clicking the search icon on the screen
+- A user can see countries and their information listed in different cards on screen
+- The country data card includes the following information: Flag, population (in millions), capital and currency
+- The country searched is distinguished by its size and its position. (Top layer is the country searched, below layers are neighbors (if ther is any))
 
-### `npm run build`
+### Future Improvements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Changing background color/image for every search
+- Adding clickable feature to cards to fetch and display more detailed info.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+|____.vscode
+| |____settings.json
+|
+|____public
+| |____.DS_Store
+| |____screenshot.png
+| |____logo.png
+| |____style.css
+| |____logo.jpegAppFolder
+|
+|____src
+| |____constants.js
+| |____script.js
+| |____.DS_Store
+| |____utils
+| | |____utilities.js
+| |____views
+| | |____views.js
+| |____listeners
+| | |____listeners.js
+| |____handlers
+| | |____handlers.js
+|
+|____index.html
+|____README.md
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Suggestions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p>If you have anything to contribute, do not hesitate to do so by adding an issue <a href="https://github.com/SaidYein/CountryInfo/issues">here</a></p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<footer> Created by <a href="https://github.com/SaidYein">SaidYein</a></footer>
