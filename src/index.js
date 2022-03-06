@@ -16,11 +16,8 @@ ReactDOM.render(
       <HoverContextProvider>
         <Router>
           <Routes>
-            <Route path="/NaturalEventTracker-API-" element={<MainPage />} />
-            <Route
-              path="/NaturalEventTracker-API-/events"
-              element={<EventsPage />}
-            />
+            <Route path="/" element={<MainPage />} />
+            <Route path="/events" element={<EventsPage />} />
           </Routes>
         </Router>
       </HoverContextProvider>
