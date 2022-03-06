@@ -1,4 +1,5 @@
 {
+  "homepage": "http://saidyein.github.io/NaturalEventTracker-API-",
   "name": "naturaleventtracker",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +50,7 @@
     "@iconify/icons-emojione-monotone": "^1.2.2",
     "@iconify/icons-fluent": "^1.2.3",
     "@iconify/icons-ic": "^1.2.2",
-    "@iconify/react": "^3.1.4"
+    "@iconify/react": "^3.1.4",
+    "gh-pages": "^3.2.3"
   }
 }
