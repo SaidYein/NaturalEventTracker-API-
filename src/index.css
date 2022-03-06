@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,400&family=Nunito:ital,wght@0,400;0,500;1,200;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: rgb(4, 21, 31);
+  --primary-component-color: rgba(98, 23, 8, 0.8);
+  --secondary-component-color: rgba(6, 167, 125, 0.8);
+  --dark-font: rgb(21, 22, 22);
+  --light-font: rgb(250, 244, 247);
+  --primary-font-family: "Nunito", sans-serif;
+  --secondary-font-family: "Cabin", sans-serif;
+}
+
+body {
+  padding: 10px;
+  background-color: var(--background-color);
+  font-family: var(--primary-font-family);
+  min-width: 600px;
+}
+
+.loader {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+}
+
+.header {
+  background-color: var(--primary-component-color);
+  color: var(--light-font);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.headerIcon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 64px;
+}
+.header h1 {
+  flex: 2;
+  font-size: 3rem;
+  font-weight: lighter;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.header span {
+  font-size: 1rem;
+  font-family: var(--secondary-font-family);
+  color: var(--light-font);
+}
+.mainPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--light-font);
+}
+.mainPageInfo {
+  height: 400px;
+  padding: 5% 10%;
+  overflow-y: scroll;
+}
+.mainPageInfo::-webkit-scrollbar {
+  display: none;
+}
+
+.mainPageInfo ul {
+  margin: 20px auto;
+  text-align: center;
+  list-style-type: none;
+}
+.footerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 64px;
+  width: 128px;
+  height: 64px;
+  background-color: var(--secondary-component-color);
+  border: none;
+  border-radius: 6px;
+}
+
+.mainPageInfo {
+  width: 90%;
+  background-color: var(--secondary-component-color);
+}
+
+.eventPageButton {
+  width: 90%;
+  background-color: var(--primary-component-color);
+  border: none;
+  height: 64px;
+  font-size: 2rem;
+  margin: 24px 5%;
+  border-radius: 6px;
+}
+
+.backButton {
+  font-size: 1rem;
+  width: 64px;
+  height: 32px;
+  background-color: var(--secondary-component-color);
+  border: none;
+  border-radius: 6px;
+}
+
+.backButton a,
+.eventPageButton a {
+  text-decoration: none;
+  color: var(--light-font);
+}
+
+.container {
+  width: 100%;
+  height: 90vh;
+}
+
+.map {
+  width: 100%;
+  height: 90vh;
+  z-index: -99;
+}
+.hoverInfo {
+  position: fixed;
+  text-align: center;
+  top: 30px;
+  width: 200px;
+  font-size: 0.8rem;
+  color: var(--dark-font);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.sidebar {
+  position: absolute;
+  width: 200px;
+  top: 120px;
+  left: 60px;
+  margin: 0;
+  list-style: none;
+  background-color: var(--primary-component-color);
+  border-radius: 10px;
+  border: 2px solid var(--background-color);
+  color: var(--light-font);
+}
+.categoryTitle {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 0.2);
+}
+.sidebar h2 {
+  padding-top: 6px;
+}
+.sidebar span {
+  font-size: 0.8rem;
+}
+.sidebar li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.eventButton {
+  font-size: 1rem;
+  padding: 8px;
+  background: none;
+  border-style: none;
+  color: var(--light-font);
+  font-family: var(--secondary-font-family);
+}
+
+.eventButton:hover {
+  cursor: pointer;
+  border-bottom: 2px solid var(--light-font);
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(111, 6, 121, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(240, 197, 7, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+.severeStorms {
+  color: #032b43;
+}
+.wildfires {
+  color: #d00000;
+}
+.volcanoes {
+  color: #523301;
+}
+.seaAndLakeIce {
+  color: #3476ad;
+}
+
+.infoContainer {
+  width: 300px;
+  min-height: 150px;
+  padding: 8px;
+  font-size: 1rem;
+  background-color: var(--secondary-component-color);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  color: var(--light-font);
+}
+.infoContainer h2 {
+  color: var(--dark-font);
+  font-family: var(--secondary-font-family);
+  margin-bottom: 10px;
+}
+
+.infoContainer a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #012e22cc;
+}
+.infoContainer a:hover {
+  color: #000000cc;
+  border-bottom: 2px solid #000000cc;
+}
+.closeButton {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--light-font);
+}
+.closeButton:hover,
+.contactLogo:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  font-weight: bolder;
+}
+.footer {
+  margin-top: 10px;
+  background-color: var(--primary-component-color);
+  color: var(--light-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--secondary-component-color);
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 30px auto;
+  font-size: 3rem;
+}
+.footer a {
+  color: var(--secondary-component-color);
+  text-decoration: none;
+  color: var(--light-font);
+}
+
+.footerLinks li,
+.footerNews li {
+  list-style: none;
+  margin: 16px;
+}
+
+.footerLinksContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.copyrights {
+  text-align: center;
+  color: var(--light-font);
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 2px solid var(--background-color);
+}
+@media only screen and (max-width: 900px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .headerIcon {
+    display: none;
+  }
+
+  .sidebar {
+    width: 160px;
+    left: 16px;
+    top: 64px;
+    font-size: 1rem;
+  }
+  .sidebar span {
+    display: none;
+  }
+
+  .eventPageButton {
+    font-size: 1.5rem;
+  }
+}
