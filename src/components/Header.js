@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       {window.location.href.indexOf("events") !== -1 ? (
         <button className="backButton">
-          <Link to="/NaturalEventTracker-API-"> Back </Link>{" "}
+          <Link to="/NaturalEventTracker-API-/"> Back </Link>{" "}
         </button>
       ) : (
         ""
