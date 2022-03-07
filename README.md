@@ -16,7 +16,7 @@ API Project
 ### Features
 
 - This is a multiple page application that consist of a Main Page and an Events Page
-- The app uses API to get data from <a href="https://eonet.gsfc.nasa.gov/api/v3">https://eonet.gsfc.nasa.gov/api</a>
+- The app uses API to get data from <a href="https://eonet.gsfc.nasa.gov/docs/v3">https://eonet.gsfc.nasa.gov/api</a>
 - User lands on the main page with information about the app when the app is ran.
 - User can swicth the page by clicking on a button on the Main Page
 - User can go back to main page when clikc on a button n the Events Page
