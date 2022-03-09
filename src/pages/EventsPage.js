@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
-import EventsController from "../EventsController";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import EventsController from "../components/EventsController";
 
 const EventsPage = () => {
   return (

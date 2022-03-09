@@ -1,26 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MainPage from "./components/pages/MainPage";
-import EventsPage from "./components/pages/EventsPage";
+import MainPage from "./pages/MainPage";
+import EventsPage from "./pages/EventsPage";
 import { EventProvider } from "./components/context/FetchContext";
 import { SelectedProvider } from "./components/context/SelectedEventsContext";
-import { HoverContextProvider } from "./components/context/HoverContext";
 
 ReactDOM.render(
   <EventProvider>
     <SelectedProvider>
-      <HoverContextProvider>
-        <Router>
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/events" element={<EventsPage />} />
-          </Routes>
-        </Router>
-      </HoverContextProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/events" element={<EventsPage />} />
+        </Routes>
+      </Router>
     </SelectedProvider>
   </EventProvider>,
   document.getElementById("root")
