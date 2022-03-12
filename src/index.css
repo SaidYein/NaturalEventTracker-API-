@@ -7,8 +7,8 @@
 
 :root {
   --background-color: rgb(4, 21, 31);
-  --primary-component-color: rgba(98, 23, 8, 0.8);
-  --secondary-component-color: rgba(6, 167, 125, 0.8);
+  --primary-component-color: rgba(109, 43, 30, 0.8);
+  --secondary-component-color: rgba(131, 204, 184, 0.8);
   --dark-font: rgb(21, 22, 22);
   --light-font: rgb(250, 244, 247);
   --primary-font-family: "Nunito", sans-serif;
@@ -63,16 +63,38 @@ body {
   align-items: center;
   color: var(--light-font);
 }
-.mainPageInfo {
-  height: 400px;
-  padding: 5% 10%;
+.mainInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.stats,
+.mainPageDescription {
+  width: 50%;
+  height: 100%;
+  min-height: 346px;
+  background-color: var(--secondary-component-color);
+  color: var(--dark-font);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.middle {
+  flex: 1;
+}
+
+.mainPageDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow-y: scroll;
 }
-.mainPageInfo::-webkit-scrollbar {
+
+.mainPageDescription::-webkit-scrollbar {
   display: none;
 }
 
-.mainPageInfo ul {
+.mainPageDescription ul {
   margin: 20px auto;
   text-align: center;
   list-style-type: none;
@@ -89,11 +111,6 @@ body {
   background-color: var(--secondary-component-color);
   border: none;
   border-radius: 6px;
-}
-
-.mainPageInfo {
-  width: 90%;
-  background-color: var(--secondary-component-color);
 }
 
 .eventPageButton {
@@ -212,16 +229,16 @@ body {
   }
 }
 .severeStorms {
-  color: #032b43;
+  color: rgb(3, 43, 67);
 }
 .wildfires {
-  color: #d00000;
+  color: rgb(208, 0, 0);
 }
 .volcanoes {
-  color: #523301;
+  color: rgb(82, 51, 1);
 }
 .seaAndLakeIce {
-  color: #3476ad;
+  color: rgb(52, 118, 173);
 }
 
 .infoContainer {
@@ -233,10 +250,9 @@ body {
   border: 3px solid var(--background-color);
   border-radius: 10px;
   border-top-left-radius: 0px;
-  color: var(--light-font);
+  color: var(--dark-font);
 }
 .infoContainer h2 {
-  color: var(--dark-font);
   font-family: var(--secondary-font-family);
   margin-bottom: 10px;
 }
@@ -327,5 +343,16 @@ body {
 
   .eventPageButton {
     font-size: 1.5rem;
+  }
+  .mainInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .stats,
+  .mainPageDescription {
+    width: 70%;
+  }
+  .mainPage h2 {
+    display: none;
   }
 }
