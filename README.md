@@ -11,7 +11,7 @@ API Project
 
 ### Demo
 
-<a href= "https://heuristic-hermann-cdebc6.netlify.app"> Natural Event Tracker </a>
+<a href= "https://nostalgic-kalam-b9480f.netlify.app"> Natural Event Tracker </a>
 
 ### Features
 
