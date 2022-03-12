@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { scroller } from "react-scroll";
+import { RiArrowDownSLine } from "react-icons/ri";
+import { FetchContext } from "../components/context/FetchContext";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MainInfo from "../components/MainInfo";
 import Stats from "../components/Stats";
-import { scroller } from "react-scroll";
-import { RiArrowDownSLine } from "react-icons/ri";
-import { useContext, useEffect } from "react/cjs/react.development";
-import { FetchContext } from "../components/context/FetchContext";
 import Loader from "../components/Loader";
 
 const MainPage = () => {

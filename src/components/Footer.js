@@ -11,12 +11,12 @@ const Footer = () => {
     <div className="footer">
       <div className="contacts">
         <div className="contactLogo">
-          <a href="">
+          <a href="https://twitter.com/saidyein">
             <FaTwitter />
           </a>
         </div>
         <div className="contactLogo">
-          <a href="">
+          <a href="https://github.com/SaidYein">
             <FaGithub />
           </a>
         </div>
@@ -26,7 +26,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="contactLogo">
-          <a href="">
+          <a href="https://www.linkedin.com/in/said-yein-263207b0/">
             <FaLinkedin />
           </a>
         </div>

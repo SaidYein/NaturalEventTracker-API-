@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { FetchContext } from "./context/FetchContext";
 import Loader from "./Loader";
 import { SelectedEventsContext } from "./context/SelectedEventsContext";

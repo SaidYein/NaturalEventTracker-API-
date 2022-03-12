@@ -10,7 +10,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { FetchContext } from "../components/context/FetchContext";
-import { useContext } from "react/cjs/react.development";
+import { useContext } from "react";
 
 ChartJS.register(
   CategoryScale,
